@@ -33,4 +33,21 @@ public class ListaTarefa {
     public void print() {
         System.out.println(tarefaList);
     }
+
+    public static void main(String[] args) {
+        ListaTarefa list = new ListaTarefa();
+
+        System.out.println("Current list size: " + list.length() + " items.");
+
+        list.addTarefa("Tarefa 01: TarefaList");
+        list.addTarefa("Tarefa 02: Refactoring and Test cases");
+        list.addTarefa("Tarefa 03: Commit");
+        System.out.println("Current list size: " + list.length() + " items.");
+
+        list.removeTarefa("Tarefa 02: Refactoring and Test cases");
+        System.out.println("Current list size: " + list.length() + " items.");
+
+        list.print();
+
+    }
 }
